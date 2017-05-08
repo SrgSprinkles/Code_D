@@ -1,11 +1,7 @@
 x = 5
 
-print x
+print (x)
 
-test = 2
+sophia = 26
 
-hi = 12
-hello = 55
-
-
-Sophia = 26
+print (sophia)
