@@ -8,7 +8,7 @@ y = 2
 print(y * 3)            #An actual calculation
 
 #You can use the command 'python test.py > test.txt' to save the output
-#of this file to a text file
+#of this file to a text fileH
 
 name = input()     #This asks for an input to be put into name
 print(name)        #Outputs name
