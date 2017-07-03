@@ -6,8 +6,8 @@ Contains C/C#/C++ code.
 ## Meetings
 UC.yber meetings. With either notes from the meetings or examples from our labs.
 
-##Notes
+## Notes
 Notes about languages, random things, or classes.
 
-#Python
+## Python
 Python code.
