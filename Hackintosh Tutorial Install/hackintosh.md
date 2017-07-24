@@ -41,7 +41,7 @@ Also, a popup should show up saying you should install VMWare tools. INSTALL THE
 #### Now If you want iMessage to work, continue down..
 
 ### Step 14: On your iPhone, go to Messages/Send & Receive setting on your iPhone
-#### Make sure you have your Apple ID linked to your iPhone
+###### Make sure you have your Apple ID linked to your iPhone
 
 ### Step 15: Sign into the iMessage app on your Hackintosh and click your phone number
 
