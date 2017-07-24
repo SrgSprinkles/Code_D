@@ -1,0 +1,24 @@
+You need some type of input in order to use php code.
+
+At the beginning of your HTML, before you write your PHP code, do
+## form action="learnphp.php" method="post"> ##
+
+Get method appends the data to the end of the URL
+Post method sends the data via a separate message instead of inside of the URL.
+
+The general way to write the code is <?php  ...  ?>
+
+echo "string" -  is used to print out something on the screen
+
+$var  -  is used for variables
+
+Concatinate a string, use the . operator ->  'echo "What is " . "up"'
+
+You can type on multiple lines with <<<EOD string or what you want in there EOD;
+
+Constants use the 'define()' function
+
+Arithmetic uses inside parenthesis like (5 + 2)
+
+If you want to set 2 variables equal to each other:
+$refToNum = &$randNum;
