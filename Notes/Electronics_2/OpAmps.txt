@@ -1,0 +1,32 @@
+Op Amps are used to do mathematical calculations. This was before any of the digital hardware came out.
+
+Rules:
+1. No current flows in or out of the inputs.
+2. The OpAmp tries to keep the inputs at the same voltage.
+3. OpAmp gain is HUGE
+
+An OpAmp is essentially just an amplifier.
+These aren't designed to be differentail amplifiers. They can be but NO.
+
+If you don't have negative feedback, the gain is huge. (The gain is probably around 100,000). This is impractical.
+The OpAmp takes the difference of the inputs, and amplifies it.
+You need a negative feedback.
+
+Positive input - Noninverting input
+Negative input - inverting input
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Ex:
+Positive input = 1.001V
+Negative Input = 1V
+
+Output = (1.001V - 1V) * Huge Gain ~= 100,000.
+Well this can't be achieved because your max voltage will be like 10V, so the ouput gets
+saturated to only 10V.
+---------------------------------------------------------------------------------------------------------------------------------------------
+If there is an open loop (no feedback) then the OpAmp is just a comparator.
+
+The OpAmp can only control the ouput of itself. So how does it keep the inputs the same voltage?
+    -With Feedback
+
+The OpAmp buffer has only connected the output to the inverting input with no load.
