@@ -1,0 +1,234 @@
+/* Global */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body, html {
+    background-color: #F1F1F1;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+    padding-top: 35px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.bg-dark-gray {
+    border-color: #3A3A3A;
+}
+
+
+
+/* My Navbar */
+.my-navbar {
+    background-color: #2D2E2E;
+    padding: 10px 0;
+}
+
+.my-navbar .custom-logo {
+    font-size: 33px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.my-navbar .navbar-header a:hover {
+    color: #FFFFFF;
+}
+
+/* When Navbar Links Are Active */
+.navbar-nav>li.active>a {
+    color: #E31837;
+}
+
+/* When Navbar Links Are Hovered Over*/
+.my-navbar li:hover a:hover {
+    color: #E31837;
+}
+
+/* When Navbar Links Are Clicked */
+.my-navbar .navbar-nav li:active a:active {
+    color: #E31837;
+}
+
+.my-navbar ul {
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.my-navbar a {
+    color: white;
+}
+
+.my-navbar .navbar-toggle .icon-bar {
+  background-color: #F1F1F1;
+}
+
+.my-navbar .navbar-toggle {
+    border: 1px solid #F1F1F1;
+}
+
+
+
+/* Header */
+header h1,
+header h3 {
+    color: #FFFFFF;
+}
+
+
+
+/*Who We Are */
+#whoWeAre {
+    padding: 100px 0;
+}
+
+#whoWeAre h4{
+    letter-spacing: 0.9px;
+    line-height: 145%;
+    padding-top: 20px;
+}
+
+#whoWeAre h1,
+#about h1,
+#connect h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+
+
+/*  Callout 2 */
+.callout2 {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #FFFFFF;
+    background: url(../img/callout2.jpg) no-repeat center center scroll;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+/* About Us */
+#about {
+    padding: 100px 0;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+#about .outreaches p,
+#about .research p,
+#about .privacy p,
+#about .collab p {
+    line-height: 1.7em;
+    padding-top: 5px;
+}
+
+.outreaches,
+.research,
+.collab,
+.privacy {
+    padding: 25px 10px;
+}
+
+.img-hover:hover {
+    opacity: 0.5;
+}
+
+/*
+.bg-members {
+    background-color: #B3B3B3;
+}
+
+.members {
+    padding: 35px 0px 100px 0px;
+}
+
+.members h2 {
+    padding-top: 25px;
+    padding-bottom: 35px;
+
+}
+
+.members h4{
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+.members .anim {
+    width: 92px;
+    height: 92px;
+    transition: width 1.25s, height 1.25s;
+}
+
+.members .anim:hover{
+    width: 48px;
+    height: 48px;
+} */
+
+
+
+/* Connect With Us */
+#connect {
+    padding: 100px 0;
+}
+
+#connect h4 {
+    line-height: 145%;
+    padding-top: 21px;
+}
+
+#connect .email-btn {
+    padding-top: 7px;
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #0E0E0E;
+    color: #3A3A3A;
+    padding: 75px 0;
+}
+
+footer h5{
+    padding: -5px 0;
+}
+
+footer hr {
+    padding-bottom: 10px;
+}
+
+footer .foot-links {
+    padding-bottom: 10px;
+}
+
+footer a{
+    color: #BCABAE;
+}
+
+footer a,
+footer p {
+    letter-spacing: 0.5px;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
