@@ -1,4 +1,4 @@
-# Code_D Info
+# Code_D Information
 
 ## C
 Contains C/C#/C++ code.
