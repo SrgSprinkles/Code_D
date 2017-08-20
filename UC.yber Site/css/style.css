@@ -14,7 +14,6 @@ body, html {
     background-color: #F1F1F1;
     position: relative;
     font-family: 'Muli', sans-serif;
-    padding-top: 35px;
 }
 
 .no-padding {
@@ -28,19 +27,20 @@ body, html {
 
 
 /* My Navbar */
-.my-navbar {
+body .navbar {
     background-color: #2D2E2E;
     padding: 10px 0;
+    margin-bottom: 0px;
 }
 
-.my-navbar .custom-logo {
+.navbar .custom-logo {
     font-size: 33px;
     font-weight: 600;
     text-decoration: none;
 }
 
-.my-navbar .navbar-header a:hover {
-    color: #FFFFFF;
+.navbar li a{
+    transition: color ease-in-out 200ms;
 }
 
 /* When Navbar Links Are Active */
@@ -49,29 +49,30 @@ body, html {
 }
 
 /* When Navbar Links Are Hovered Over*/
-.my-navbar li:hover a:hover {
+.navbar li:hover a:hover {
     color: #E31837;
+
 }
 
 /* When Navbar Links Are Clicked */
-.my-navbar .navbar-nav li:active a:active {
-    color: #E31837;
+.navbar .navbar-nav li:active a:active {
+    color: #91171F;
 }
 
-.my-navbar ul {
+.navbar ul {
     text-transform: uppercase;
     letter-spacing: 0.75px;
 }
 
-.my-navbar a {
+.navbar a {
     color: white;
 }
 
-.my-navbar .navbar-toggle .icon-bar {
+.navbar .navbar-toggle .icon-bar {
   background-color: #F1F1F1;
 }
 
-.my-navbar .navbar-toggle {
+.navbar .navbar-toggle {
     border: 1px solid #F1F1F1;
 }
 
@@ -148,39 +149,6 @@ header h3 {
     opacity: 0.5;
 }
 
-/*
-.bg-members {
-    background-color: #B3B3B3;
-}
-
-.members {
-    padding: 35px 0px 100px 0px;
-}
-
-.members h2 {
-    padding-top: 25px;
-    padding-bottom: 35px;
-
-}
-
-.members h4{
-    letter-spacing: 0.5px;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    font-weight: bold;
-}
-
-.members .anim {
-    width: 92px;
-    height: 92px;
-    transition: width 1.25s, height 1.25s;
-}
-
-.members .anim:hover{
-    width: 48px;
-    height: 48px;
-} */
-
 
 
 /* Connect With Us */
@@ -190,11 +158,25 @@ header h3 {
 
 #connect h4 {
     line-height: 145%;
-    padding-top: 21px;
+    padding-bottom: 7px;
 }
 
-#connect .email-btn {
-    padding-top: 7px;
+#connect button {
+    display: inline;
+    color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 18px;
+    background: #E31837;
+    cursor: pointer;
+    box-shadow: 0px 50px 17px -25px rgba(0,0,0,0);
+    transition: all ease-in-out 400ms;
+}
+
+#connect button:hover{
+    box-shadow: 0px 50px 17px -25px rgba(0,0,0,0.2);
+    transform: translate(0px, -7px);
 }
 
 
