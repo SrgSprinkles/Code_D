@@ -1,0 +1,70 @@
+/* Body */
+body{
+    background-color: #E8E9F3;
+}
+
+/*
+Fonts
+@font-face {
+    font-family: StrokeMustache;
+    src: url('Stroke-mustache.ttf') format('truetype');
+    src: url('Stroke-mustache.woff') format('woff');
+    src: url('Stroke-mustache.eot') format('embedded-opentype');
+    src: url('Stroke-mustache.svg') format('svg');
+}
+*/
+
+/* Navbar */
+/*
+body .navbar{
+    background-color: rgba(218, 32, 55, 1);
+    border-radius: 0;
+}
+
+body .navbar a{
+    color: white;
+}
+*/
+
+
+
+/* Header */
+body header{
+    background-color: #ACD5FE;
+    /*background-attachment: fixed;*/
+    height: 100vH;
+    width: 100%;
+    /*
+    background-size: cover;
+    box-sizing: border-box;
+    */
+}
+
+header .text{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 24%;
+}
+
+body header h1 .customfont{
+    /*
+    font-family: StrokeMustache;
+    color: rgba(218, 32, 55, 0.8);
+    */
+}
+
+header .mustache{
+    display: flex;
+    justify-content: center;
+}
+
+header .animate{
+    background-color: black;
+}
+
+
+/* I am.. */
+#about{
+    padding: 50px;
+}
