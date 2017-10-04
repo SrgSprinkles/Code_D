@@ -2,8 +2,7 @@
 
 html,
 body {
-    background-color: #F1F1F1;
-    position: relative;
+    height 100%;
     font-family: 'Muli', sans-serif;
 }
 
@@ -16,11 +15,33 @@ body {
 }
 
 
+/* Navbar */
+
+body .navbar-dark .navbar-brand {
+    font-size: 50px;
+    color: #fff;
+}
+
+body .navbar-dark .navbar-brand span {
+    color: #E31837;
+}
+
+body .navbar-dark .navbar-nav .active>.nav-link {
+    color: rgba(227, 24, 55, 0.75);
+}
+
+body .navbar-dark .navbar-nav .nav-link {
+    font-size: 35px;
+    color: rgba(241, 241, 241, 0.8);
+}
+
 /* Header */
 
-body .header {
+/*body .header {
     position: relative;
-    display: table;
+    text-align: center;
+    display: flex;
+    align-items: center;
     background: url(../imgs/bg.jpg) no-repeat center center scroll;
     background-attachment: fixed;
     width: 100%;
@@ -29,10 +50,24 @@ body .header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}*/
+
+#cover {
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background: #222 url(../imgs/bg.jpg) no-repeat top center scroll;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-header h1 {
-    color: #FFFFFF;
+#cover-caption {
+    width: 100%;
 }
 
 

@@ -18,33 +18,55 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600" rel="stylesheet">
 </head>
 
-<body>
+<body id="pageTop">
+    <!--
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#pageTop"><strong>Cyber</strong> @ <span><strong>UC</strong></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Header with Background 
-    Why are you here? 
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#whoWeAre">Who We Are<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#connect">Conect</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+-->
+
+    <!-- Header with Background
+    Why are you here?
     What is this?
     Have a Hook-->
-    <header class="header">
-        <div class="text-vertical-center">
-            <h1>
-                We create a culture around information security
-            </h1>
+    <section id="cover">
+        <div id="cover-caption">
+            <div class="container">
+                <div class="col-sm-12">
+                    <h1 class="display-3"><strong>We create a culture around information security</h1></strong>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
 
     <!-- Who We Are -->
     <section id="whoWeAre">
         <div class="container">
-            <div class="row text-center">
+            <div class="row">
                 <div class="col-12">
-                    <h1>
-                        Who We Are
-                    </h1>
+                    <center><h2>Who We Are</h2></center>
                     <hr class="small bg-dark-gray" />
                 </div>
                 <div class="row justify-content-sm-center">
-                    <div class="col-sm-12 col-sm-auto">
-                        <h3>
+                    <div class="col-12 col-auto col-md-10">
+                        <h3 class="animated wow fadeInLeft" data-wow-delay="0.5s">
                             <b>Cyber@UC</b> is the official student led Information Security OWASP Organization for the University of Cincinnati. We try to spread the knowledge and importance of Information Security across all ages by doing outreaches
                             or by collaboration with companies and other organizations.
                         </h3>
@@ -64,53 +86,75 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
-                    <h1 class="animated wow fadeIn">
+                    <h1>
                         About Us
                     </h1>
                     <hr class="small bg-offwhite" />
                 </div>
-                <div class="col-6">
+                <div class="col-1">
+                </div>
+                <div class="col-10">
                     <div class="outreach">
-                        <img src="imgs/beacon.png" class="img-responsive center-block animated wow fadeInUpBig" data-wow-delay="0.6s" />
-                        <h3>
-                            Outreach
-                        </h3>
-                        <h5>
-                            Travel out to local high schools to generate interest and teach about the importance of information security.
-                        </h5>
+                        <div class="animated wow fadeInLeft" data-wow-delay="0.5s">
+                            <img src="imgs/beacon.png" class="img-responsive center-block" />
+                            <h3>
+                                Outreach
+                            </h3>
+                            <h5>
+                                Travel out to local high schools to generate interest and teach about the importance of information security.
+                            </h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6">
+            </div>
+            <div class="row text-center">
+                <div class="col-1">
+                </div>
+                <div class="col-10">
                     <div class="research">
-                        <img src="imgs/book.png" class="img-responsive center-block" />
-                        <h3>
-                            Research
-                        </h3>
-                        <h5>
-                            Research bleeding-edge technologies like predictive intrusion detection systems and contribute to open source projects like cuckoo malware sandbox.
-                        </h5>
+                        <div class="animated wow fadeInLeft" data-wow-delay="0.5s">
+                            <img src="imgs/book.png" class="img-responsive center-block" />
+                            <h3>
+                                Research
+                            </h3>
+                            <h5>
+                                Research bleeding-edge technologies like predictive intrusion detection systems and contribute to open source projects like cuckoo malware sandbox.
+                            </h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="privacy animated wow fadeInLeft">
-                        <img src=" imgs/lock.png " class="img-responsive center-block" />
-                        <h3>
-                            Privacy
-                        </h3>
-                        <h5>
-                            Stress the importance of privacy by setting up fun and informative exercises to educate our members how hackers steal private information.
-                        </h5>
+            </div>
+            <div class="row text-center">
+                <div class="col-1">
+                </div>
+                <div class="col-10">
+                    <div class="privacy">
+                        <div class="animated wow fadeInLeft" data-wow-delay="0.5s">
+                            <img src=" imgs/lock.png " class="img-responsive center-block" />
+                            <h3>
+                                Privacy
+                            </h3>
+                            <h5>
+                                Stress the importance of privacy by setting up fun and informative exercises to educate our members how hackers steal private information.
+                            </h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 ">
-                    <div class="collab animated wow fadeInRight" data-wow-delay="0.6s">
-                        <img src=" imgs/chat.png " class="img-responsive center-block" />
-                        <h3>
-                            Collaborate
-                        </h3>
-                        <h5>
-                            Connect with businesses and local organizations to offer our members unique opportunities to network within the field of cyber security.
-                        </h5>
+            </div>
+            <div class="row text-center">
+                <div class="col-1">
+                </div>
+                <div class="col-10">
+                    <div class="collab">
+                        <div class="animated wow fadeInLeft" data-wow-delay="0.5s">
+                            <img src=" imgs/chat.png " class="img-responsive center-block" />
+                            <h3>
+                                Collaborate
+                            </h3>
+                            <h5>
+                                Connect with businesses and local organizations to offer our members unique opportunities to network within the field of cyber security.
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,22 +167,24 @@
     </aside>
 
     <!-- Connect With Us -->
-    <section id="connect ">
+    <section id="connect">
         <div class="container ">
             <div class="row text-center ">
-                <div class="col-sm-12 ">
+                <div class="col-12 ">
                     <h1>
                         Connect With Us
                     </h1>
                     <hr class="small bg-dark-gray " />
                 </div>
-                <div class="col-sm-12 ">
-                    <h3>
-                        If you have any questions, concerns, or just want to contact with us then don't hesitate to send an email!
-                    </h3>
-                    <a class="button pulse " href="mailto:uc.yb3r@gmail.com ">
-                        Email Cyber@UC
-                    </a>
+                <div class="col-12 ">
+                    <div class="animated wow fadeInLeft" data-wow-delay="0.5s">
+                        <h3>
+                            If you have any questions, concerns, or just want to contact with us, send an email!
+                        </h3>
+                        <a class="button pulse " href="mailto:uc.yb3r@gmail.com ">
+                            Email Cyber@UC
+                        </a>
+                    </div>
                 </div>
                 <!--
                 <div class="socialMedia ">
@@ -185,15 +231,18 @@
         </div>
     </footer>
 
-    <!-- Bootsrap Minified JS -->
-    <script src="js/bootstrap.min.js "></script>
     <!-- jQuery Minified JS -->
-    <script src="js/jquery.min.js "></script>
+    <!-- <script language="Javascript" type="text/javascript" src="js/jquery.min.js "></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script language="Javascript" type="text/javascript" src="js/parallax.min.js"></script>
+    <!-- Bootsrap Minified JS -->
+    <script language="Javascript" type="text/javascript" src="js/bootstrap.min.js "></script>
     <!-- jQuery SmoothScroll Plugin -->
-    <script src="js/smoothscroll.js "></script>
+    <script language="Javascript" type="text/javascript" src="js/smoothscroll.js "></script>
     <!-- Stylish Portfolio JS -->
-    <script src="js/stylish-portfolio.js "></script>
+    <script language="Javascript" type="text/javascript" src="js/stylish-portfolio.js "></script>
     <!-- Twitter Feed Widget -->
+<!--
     <script>
         window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
@@ -212,10 +261,21 @@
             return t;
         }(document, "script ", "twitter-wjs "));
     </script>
+-->
     <!-- WOW.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
     <script>
         new WOW().init();
+    </script>
+
+    <script>
+        $(window).scroll(function() {
+            /*var wScroll = $(this).scrollTop();
+            console.log(wScroll);
+            $('.display-3').css({
+                'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+            });*/
+        });
     </script>
 
 </body>
