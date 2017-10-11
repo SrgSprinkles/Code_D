@@ -1,0 +1,24 @@
+/* Header example */
+.example .forward, .example .backward { float: left; width: 100px; height: 200px; font-size: 60px; }
+.example .forward { float: right; }
+
+.example .frame { margin: 0 auto; width: 100%; height: auto; text-shadow: none; }
+.example .frame ul { list-style: none; margin: 0; padding: 0; font-size: 50px; }
+.example .frame ul li { float: left; width: 33.33%; opacity: 0.3 !important; list-style: none; }
+.example .frame ul li.active { color: #fff;  opacity: 1 !important; }
+
+.example .scrollbar { margin: 0 auto 30px; width: 940px; height: 2px; line-height: 0; }
+.example .scrollbar .handle { width: 100px; background: #fff; cursor: pointer; }
+.example .scrollbar .handle .mousearea { position: absolute; top: -9px; left: 0; width: 100%; height: 20px; }
+
+.example .pages { list-style: none; margin: 20px 0; padding: 0; text-align: center; }
+.example .pages li { display: inline-block; width: 14px; height: 14px; margin: 0 4px; text-indent: -999px; border-radius: 10px; cursor: pointer; overflow: hidden;
+	background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.example .pages li:hover { background: #aaa; }
+.example .pages li.active { background: #666; }
+
+.example .controls { margin: 50px 0 0; text-align: center; }
+.example .controls .divider { display: inline-block; margin: 0 10px; }
+.example .controls button { line-height: 32px; vertical-align: middle; font-family: Novecento, sans-serif; }
+.example .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }
