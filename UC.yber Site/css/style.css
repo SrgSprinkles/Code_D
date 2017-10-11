@@ -35,7 +35,9 @@ body .navbar-dark .navbar-nav .nav-link {
     color: rgba(241, 241, 241, 0.8);
 }
 
+
 /* Header */
+
 
 /*body .header {
     position: relative;
@@ -70,17 +72,19 @@ body .navbar-dark .navbar-nav .nav-link {
     width: 100%;
 }
 
+#whoWeAre,
+#about,
+#connect {
+    padding: 5.5em 0;
+}
+
 
 /*Who We Are */
 
-#whoWeAre {
-    padding: 75px 0;
-}
-
-#whoWeAre h3 {
+#whoWeAre h5 {
     letter-spacing: 0.9px;
-    line-height: 175%;
-    padding: 20px 0px;
+    line-height: 200%;
+    padding-top: 2em;
 }
 
 #whoWeAre h1,
@@ -99,7 +103,7 @@ body .callout {
     width: 100%;
     height: 600px;
     color: #fff;
-    background: url(../imgs/callout.jpg) no-repeat center center scroll;
+    background: url(../imgs/callout.jpg) no-repeat top center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -109,22 +113,32 @@ body .callout {
 
 /* About Us */
 
-#about {
-    padding: 75px 0;
-    background-color: #1A1A1A;
-    color: #FFFFFF;
+.bg-light-grey {
+    background-color: #E1E1E1;
 }
 
-#about .description {
-    line-height: 1.7em;
-    padding: 25px 0px;
+#about .row-regular {
+    padding: 3.5em 0 1em 0;
 }
 
-#about .outreach,
-#about .research,
-#about .privacy,
-#about .collab {
-    padding: 25px 0px;
+#about .row-reverse {
+    flex-direction: row-reverse;
+    padding: 3.5em 0 1em 0;
+}
+
+#about img {
+    border-radius: 50%;
+}
+
+#about .main-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 3em 0 3em;
 }
 
 #about h3 {
@@ -132,7 +146,7 @@ body .callout {
 }
 
 #about h5 {
-    line-height: 150%;
+    line-height: 175%;
 }
 
 
@@ -154,64 +168,96 @@ body .callout2 {
 
 /* Connect With Us */
 
-#connect {
-    padding: 80px 0;
+#connect .title {
+    padding-top: 2em;
 }
 
-#connect h3 {
-    line-height: 145%;
-    padding: 20px 0px;
-    margin-bottom: 20px;
+
+/* Form */
+
+form {
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#connect .button {
-    background: none;
-    border: 2px solid;
-    font: inherit;
-    padding: 15px 16px;
-    margin-top: 0px;
+label {
+    display: block;
+    letter-spacing: 4px;
+    padding-top: 0.5em;
+    width: 100%
+    /*text-align: center;*/
 }
 
-.pulse:hover,
-.pusle:focus {
-    -webkit-animation: pulse 1s;
-    -moz-animation: pulse 1s;
-    animation: pulse 1s;
-    box-shadow: 0 0 0 1.25em rgba(255, 255, 255, 0);
+label .label-text {
+    color: #9B9B9B;
+    cursor: text;
+    font-size: 1.1em;
+    line-height: 20px;
+    text-transform: uppercase;
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: all 0.3s;
 }
 
-@-webkit-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 #E31837
-    }
+label input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #4A4A4A;
+    color: #000;
+    font-size: 2em;
+    letter-spacing: -1px;
+    outline: 0;
+    padding: 5px 10px;
+    /*text-align: center;*/
+    transition: all 0.3s;
+    width: 100%;
 }
 
-@-moz-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 #E31837
-    }
+label input:focus {
+    width: 100%;
+    border-bottom: 2px solid #E31837;
 }
 
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 #E31837
-    }
+label input:focus+.label-text {
+    color: #E31837;
+    font-size: 0.8em;
+    -moz-transform: translateY(-70px);
+    -ms-transform: translateY(-70px);
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70);
 }
 
-#connect .button {
-    font-size: 18px;
-    color: #333;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    transition: 0.25s;
+label input:valid+.label-text {
+    font-size: 13px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
 }
 
-#connect .button:hover,
-#connect .button:focus {
+button {
+    background-color: #333333;
+    border: 2px solid white;
+    border-radius: 27px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 0.75em;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: all 200ms;
+}
+
+button:hover,
+button:focus {
     border-color: #E31837;
-    background-color: rgba(227, 24, 55, 0.6);
-    color: #F1F1F1;
-    text-decoration: none;
+    background-color: white;
+    color: #333333;
+    outline: 0;
 }
 
 
