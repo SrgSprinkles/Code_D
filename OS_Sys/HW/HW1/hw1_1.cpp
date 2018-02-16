@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		if (!fork()) {
 			for (int j = 0; j < atoi(argv[1]); j++) {
 				printf("This is a child process, my PID is %d, my parent PID is %d\n", getpid(), getppid());
-				sleep(2);
+				sleep(1);
 				wait(NULL);
 			}
 			
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	//Displays the parents PIDs N times
 	for (int k = 0; k < atoi(argv[1]); k++) {
 		printf("This is the main process, my PID is %d\n", getpid());
-		sleep(2);
+		sleep(1);
 	}
 	wait(NULL);			//Wait for children to terminate
 	
